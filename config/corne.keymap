@@ -42,13 +42,11 @@ ZMK_HOLD_TAP(hmr,
 
 ZMK_CONDITIONAL_LAYER(ADJ, LWR RSE, ADJ)
 
-#undef COMBO_HOOK
-#define COMBO_HOOK require-prior-idle-ms = <230>;
-ZMK_COMBO(ij_project_files,         &kp LG(NUMBER_1),     RB0 RB1, BSE)
-ZMK_COMBO(ij_selected_task_run,     &kp LS(LC(F10)),      LT0 LT1, BSE)
-ZMK_COMBO(ij_last_run_task_run,     &kp LS(F10),          LM0 LM1, BSE)
-ZMK_COMBO(ij_stop_running_task,     &kp LG(F2),           LT2 LT3, BSE)
-ZMK_COMBO(ij_run_menu,              &kp LS(LA(F10)),      RT0 RT1, BSE)
+ZMK_COMBO(ij_project_files,         &kp LG(NUMBER_1),     RB0 RB1, BSE, 50, 230)
+ZMK_COMBO(ij_selected_task_run,     &kp LS(LC(F10)),      LT0 LT1, BSE, 50, 230)
+ZMK_COMBO(ij_last_run_task_run,     &kp LS(F10),          LM0 LM1, BSE, 50, 230)
+ZMK_COMBO(ij_stop_running_task,     &kp LG(F2),           LT2 LT3, BSE, 50, 230)
+ZMK_COMBO(ij_run_menu,              &kp LS(LA(F10)),      RT0 RT1, BSE, 50, 230)
 
 ZMK_LAYER(base,
 &kp TAB    &kp Q          &kp W         &kp E        &kp R        &kp T      &kp Y      &kp U        &kp I        &kp O         &kp P            &kp BSPC
